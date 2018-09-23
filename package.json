@@ -10,8 +10,8 @@
     "url": "https://github.com/prizeprofile/lambda-authorizer"
   },
   "scripts": {
-    "create:stage": "claudia create --name stage-authorizer --region eu-west-1 --handler index.handler --role arn:aws:iam::365488455739:role/lambda_basic_execution --config claudia-stage.json",
-    "create:prod": "claudia create --name prod-authorizer --region eu-west-1 --handler index.handler --role arn:aws:iam::365488455739:role/lambda_basic_execution --config claudia-prod.json",
+    "create:stage": "claudia create --name stage-authorizer --region eu-west-1 --handler index.handler --role arn:aws:iam::365488455739:role/lambda_dynamo_db --config claudia-stage.json",
+    "create:prod": "claudia create --name prod-authorizer --region eu-west-1 --handler index.handler --role arn:aws:iam::365488455739:role/lambda_dynamo_db --config claudia-prod.json",
     "deploy:stage": "claudia update --config claudia-stage.json",
     "deploy:prod": "claudia update --config claudia-prod.json"
   },
