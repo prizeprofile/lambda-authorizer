@@ -4,10 +4,12 @@ Authorizes a request sent to API Gateway.
 
 ## Enviroment variables
 
-* `TABLE_NAME` that users are stored in.
+* `DDB_TABLE` that users are stored in.
 
 ## Responses
 
+### 401
+### 200
 
 ## Deployment
 Deploy with `npm run deploy:{env}`.
