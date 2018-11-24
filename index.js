@@ -12,7 +12,6 @@ exports.handler = ({ authorizationToken, methodArn }, _, callback) => {
 
   return new Promise((resolve, reject) => {
     ddb.getItem(item, (err, d) => {
-      console.log(err, d)
 
       return err || ! d || ! d.Item || ! d.Item.pp_token || d.Item.pp_token.S !== token
         ? reject()
